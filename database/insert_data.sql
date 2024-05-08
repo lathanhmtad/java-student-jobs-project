@@ -1,4 +1,4 @@
-
+use student_jobs_management;
 -- Chèn dữ liệu mẫu vào bảng truong
 INSERT INTO truong (ma_truong, ten_truong, address, phone)
 VALUES ('UDN', 'Đại học Đà Nẵng', 'Hòa khánh, Đà Nẵng', '123456789'),
@@ -35,9 +35,9 @@ VALUES ('123213456789', '2029-10-02', 'CNTT', 'Web develop', 'Công ty cho dân 
        ('456789123', '2023-05-03', 'DTGVSP', 'Chăm sóc gấu trúc', 'Công ty chăm sóc trẻ em', 'Địa chỉ C', '10:00:00');
 
 
-select *
-from sinh_vien
-where so_cmnd = ? or full_name = ? or email = ? or phone = ? or address = ?;
+-- select *
+-- from sinh_vien
+-- where so_cmnd = ? or full_name = ? or email = ? or phone = ? or address = ?;
 
 
 select sv.so_cmnd, full_name, tn.ma_nganh as ma_nganh_tot_nghiep, tn.ma_truong as ma_truong_tot_nghiep, cv.ma_nganh as ma_nganh_cong_ty, cv.ten_cong_ty, cv.thoi_gian_lam_viec
